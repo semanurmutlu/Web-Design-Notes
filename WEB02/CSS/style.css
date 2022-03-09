@@ -1,0 +1,121 @@
+body
+{
+    
+}
+main
+{
+    background-color: #FBC7F7;
+    width: 980px;
+    /* yukarı ve soldan 0 boşluk sağ ve aşağıdan dengele alt satırda */
+    margin: 0 auto; /*saat yönünde yukarıdan aşa doğru 4 etiket alarak sayfadan uzaklığını söyleriz  margin: 20px 10px 90px 10px;*/
+    
+    /* Daha sonra sileceğiz */
+    min-height: 750px;
+}
+div#advertise
+{
+    /* width: 100%; */
+    height: 120px;
+
+    /* Daha sonra sileceğiz */
+    background-color: #D62AD0;
+}
+div#nav
+{
+    height: 50px;
+
+    /* Daha sonra sileceğiz */
+    background-color: #B34180 ;
+}
+div#middle
+{
+    min-height: 450px;
+    background-color: #9A0680;
+}
+div#footer
+{
+    height: 130px;
+    background-color: #781C68;
+    display: inline-block;
+}
+div#middle-left
+{
+    min-height: 450px;
+    width: 20%;
+    background-color: #FF008E;
+    float: left;
+}
+div#middle-right
+{
+    min-height: 450px;
+    width:80%;
+    background-color: #D22779;
+    float: left;
+    padding: 0 5;
+}
+div#menu ul
+{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    padding-left: 25px;
+    
+}
+div#menu li /*id si menu olan divin altındaki li leri seç*/
+{
+    list-style-type: none;
+    float: left;
+    padding: 7px;
+    height: 36px;
+    line-height: 36px;
+    border-right: 2px solid #fff;
+}
+div#menu li:first-child /*anasayfanın başına çizgi eklemek için*/
+{
+    border-left: 2px solid #fff;
+}
+div#menu li a
+{
+    color: #fff;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+
+/* referans.html */
+div.referance-box
+{
+    width: 100px;
+    height: 100px;
+    background-color: #3b1235;
+    display: inline-block;
+    margin: 15px;
+}
+div.yazi img
+{
+    width: 300px;
+    padding: 5px;
+    background-color: antiquewhite;
+    border-radius: 3px;
+    margin: 5px;
+    float: left;
+}
+.yazi h5{
+    font-size: 1.3rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+}
+.yazi p{
+    font-size: 1.2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+div.baslikdetay
+{
+    float: left;
+    padding: 5px;
+    width: 350px;
+}
+.yazi
+{
+    padding: 15px 0;
+}
