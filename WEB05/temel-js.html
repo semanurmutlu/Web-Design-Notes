@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=p, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Hello JS!</p>
+    <script>
+        /*
+        çoklu yorum
+        satırı*/
+        // tekli yorum satırı
+
+        // var sayi = 5; //1 den fazla tanımlanabilir
+        // var sayi = 10;
+
+        // let sayi2 = 5;//1 defa tanımlanabilir
+        // // let sayi2=10; lef yeni demek varla aynı ama yeni versiyonda geldiği için tekrar aynı ismi tanımlayamazsın
+        // sayi2 = 10;
+        // console.log(sayi2);
+
+        // const pi = 3.14;//sabit veri
+        // //pi=3; //hata verir
+
+        // alert("Merhabalar");
+
+        /////////////////////////////////////////////////////////
+        //      VERİ TİPLERİ
+        ////////////////////////////////////////////////////////
+        //Number tam ve ondalıklı sayılar + - 2 üssü 53
+        //BigInt: Number'dan daha büyük sayılar için
+        //string boolean null object veri tipleri vardır
+
+
+        // /////////////////////////////////////////////////////////
+        // //                 Tip Dönüşümleri                    //
+        // ////////////////////////////////////////////////////////
+        // let variable = "125";
+        // console.log(typeof variable);//tipinin ne old. nu söyler
+        // console.log(typeof alert);
+        // console.log(typeof 7);
+        // console.log(typeof Manth);
+        // console.log(typeof true);
+
+        // var sayi = Number(145);
+        // var mesaj = "sayi değişkeninin veri tipi:" + typeof sayi;
+        // console.log(mesaj);
+
+        // console.log(String(145));
+        // console.log(Boolean("NA303"));
+        // console.log(Boolean(""));
+        // console.log(typeof Boolean("789"));
+
+        // //JSON Okuma! => string to object
+        // var strVeri = '{"name":"Ahmet","surname":"Çelik"}';
+        // console.log(typeof strVeri);
+        // let objVeri = JSON.parse(strVeri);
+        // console.log(objVeri);
+        // console.log(objVeri.name);
+        // console.log(objVeri.surname);
+
+        // //Stringify =>object to string
+        // let objPerson = {
+        //     name: "Mahmut",
+        //     surname: "Şeker",
+        //     address: { city: "Sivas", town: "Suşehri" }
+        // };
+        // //university.mongodb.com
+
+        // console.log(objPerson.name);
+        // console.log(objPerson.surname);
+        // //Burada nesne tanımladık.
+
+        // console.log(typeof objPerson);
+        // let strPerson = JSON.stringify(objPerson);
+        // console.log(strPerson);
+        // console.log(typeof strPerson);
+
+
+        /////////////////////////////////////////////////////////
+        //              MANTIKSAL OPERATÖRLER                 //
+        ////////////////////////////////////////////////////////
+        // let a=false;
+        // let b=false;
+        // let andOperator=a && b ;
+
+      // Array Loop Exampless //
+        // Aşağıdaki personel bilgilerini objeden diziye atıp dizide döngü ile gösteren kodu yazınız.
+        
+        // //id, name, surname, birthyear
+        // "use strict"; //ES6 kuralları zorunlu olsun
+        // let person ={
+        //     id:1,
+        //     name:"Ayşe",
+        //     surname:"Aslan",
+        //     birthear:1990
+        // };
+        // let personArray=[person.id,person.name,person.surname,person.birthear];
+        // console.log(personArray+" "+typeof personArray);
+
+        // for (let i = 0; i < personArray.length; i++) {
+        //     console.log("person info:"+personArray[i]);
+        // }
+        // //foreach döngüsü
+        // personArray.forEach(item=>{
+        //     console.log(item);
+        // });
+        
+         /////////////////////////////////////////////////////////
+         //                      Functions                     //
+         ////////////////////////////////////////////////////////
+        // function topla(a,b)
+        // {
+        //     return a+b;
+        // }
+
+        // let toplam=topla(8,9);
+        // alert(toplam);
+        // let fark=function(a,b){
+        //     return a-b;
+        // };
+        // alert(fark(5,2));
+
+
+         /////////////////////////////////////////////////////////
+         //                      MAP                           //
+         ////////////////////////////////////////////////////////
+
+        //  let map=new Map();
+        //  map.set('anahtar','deger');
+
+        // let renklerEng=new Map();
+        // renklerEng.set('kırmızı','red');
+        // renklerEng.set('beyaz','white');
+        // renklerEng.set('siyah','black');
+        // renklerEng.set('siyah','dark'); //güncelledik
+
+        // //Okuma
+        // console.log(renklerEng.get('siyah'));
+        // console.log(renklerEng['siyah']);//çağırdık
+
+        // console.log(renklerEng.entries());//tamamını görebiliriz
+        // console.log(renklerEng.keys());//ayrı ayrı görebiliriz.
+        // console.log(renklerEng.values());//ayrı ayrı görebiliriz.
+
+
+        //personel verisini Map ile tutup kullanınız.
+        //tc,adsoyad,maas,adres
+        // let personel=new Map();
+        // personel.set('tc',12345678910);
+        // personel.set('adsoyad',"Serhat Gül");
+        // personel.set('maas','7000');
+        // personel.set('adres',"Kadıköy");
+
+        // console.log(personel.entries());//tümünü çağırdık
+        // console.log(personel.values());//sadece değerler gelir
+
+        // let sayHello=()=>{alert("Helloooooo")};
+        // let carp=(a,b)=>a*b;
+        // sayHello();
+        // alert(carp(7,8));
+        
+        // /////////////////////
+        // ///// Object   //////
+        // ////////////////////
+        //     var user=new Object();
+        //     var user={};
+        //     var user={
+        //         email:"john@doe.com",
+        //         password:"myPwd",
+        //         degress:{
+        //             mathematic:70,
+        //             physic:75,
+        //             scienHistory:90}
+        //     };
+
+        //     console.log(user.email);
+        //     console.log(user.password);
+        //     console.log(user.degress.mathematic);
+        //     console.log(user.degress.physic);
+        //     console.log(user.degress.scienHistory);
+            
+
+            ///////////////////
+            ////// iter //////
+            ///////////////////
+
+            let numbers=[105,235,390];
+            let numbersIterator=numbers[Symbol.iterator]();
+            //next metodu her çalıştığında liste elemanlarına sırası ile ulaşır.
+            // console.log(numbersIterator.next());
+            // console.log(numbersIterator.next());
+            // console.log(numbersIterator.next());
+
+            let check=false;
+            while(check==false)
+            {
+                check=numbersIterator.next().done;
+                console.log("çalıştı");//4 kere çalışır +1 fazla çalışmış olur!
+            }
+        
+
+    </script>
+</body>
+
+</html>
